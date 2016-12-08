@@ -1,0 +1,12 @@
+c:\users\aleksandra\documents\visual studio 2015\Projects\Gipotenuza\Gipotenuza\bin\Debug\Gipotenuza.exe.config
+c:\users\aleksandra\documents\visual studio 2015\Projects\Gipotenuza\Gipotenuza\bin\Debug\Gipotenuza.exe
+c:\users\aleksandra\documents\visual studio 2015\Projects\Gipotenuza\Gipotenuza\bin\Debug\Gipotenuza.pdb
+c:\users\aleksandra\documents\visual studio 2015\Projects\Gipotenuza\Gipotenuza\obj\Debug\Gipotenuza.csprojResolveAssemblyReference.cache
+c:\users\aleksandra\documents\visual studio 2015\Projects\Gipotenuza\Gipotenuza\obj\Debug\Gipotenuza.exe
+c:\users\aleksandra\documents\visual studio 2015\Projects\Gipotenuza\Gipotenuza\obj\Debug\Gipotenuza.pdb
+E:\repos\GroupProject\11_SergeyDerko\Gipotenuza\Gipotenuza\bin\Debug\Gipotenuza.exe.config
+E:\repos\GroupProject\11_SergeyDerko\Gipotenuza\Gipotenuza\obj\Debug\Gipotenuza.exe
+E:\repos\GroupProject\11_SergeyDerko\Gipotenuza\Gipotenuza\obj\Debug\Gipotenuza.pdb
+E:\repos\GroupProject\11_SergeyDerko\Gipotenuza\Gipotenuza\bin\Debug\Gipotenuza.exe
+E:\repos\GroupProject\11_SergeyDerko\Gipotenuza\Gipotenuza\bin\Debug\Gipotenuza.pdb
+E:\repos\GroupProject\11_SergeyDerko\Gipotenuza\Gipotenuza\obj\Debug\Gipotenuza.csprojResolveAssemblyReference.cache
