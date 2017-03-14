@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+ <link href="../../Content/SergeyDerko.css" rel="stylesheet">
+<h2 align="center">Получение данных о компьютере из службы</h2>
+<div align="center">
+    <h3 align="center" style="color: #cf1324">Добавленна запись в Базу!</h3>
+    <a href="../ScanPcBds/Index" class="button9">Представление Базы Данных >></a>
+    @*<h3>@Html.ActionLink("Представление Базы Данных >>", "Index", "ScanPcBds")</h3>*@
+    <table border="1">
+        <tr>
+            <td>
+                <strong>Информация о накопителях</strong>
+                <br/>
+                @Html.Raw(ViewBag.Hdd)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>Информация о процессоре</strong>
+                <br/>
+                @Html.Raw(ViewBag.Cpu)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>Информация о видеокарте</strong>
+                <br/>
+                @Html.Raw(ViewBag.Video)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>Информация о оперативной памяти</strong>
+                <br/>
+                @Html.Raw(ViewBag.Memory)
+            </td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>

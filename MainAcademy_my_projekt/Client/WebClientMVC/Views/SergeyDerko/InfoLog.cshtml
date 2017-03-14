@@ -1,0 +1,19 @@
+﻿@model WebClientMVC.Models.ReadLogModel
+
+@{
+    ViewBag.Title = "InfoLog";
+}
+
+<h2 align="center" style="color:#cf1324">Данные из логов службы "TestWcfService"</h2>
+<style>
+    .layer {
+        overflow: scroll;
+        width: 100%;
+        height: 600px;
+        padding: 5px; 
+        border: solid 1px black;
+    }
+</style>
+<div class="layer">
+    @Html.Raw(ViewBag.Infologer)
+ </div>

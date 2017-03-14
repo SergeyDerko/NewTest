@@ -1,0 +1,48 @@
+﻿@model WebClientMVC.Models.CalcModel
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="../../Content/SergeyDerko.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div align="center">
+
+        <br />
+        <h1 align="center">Мои работы</h1>
+        <br />
+
+        <a href="SergeyDerko/ScanPcResult" class="button9">Получение данных о компьютере >></a>     <a href="SergeyDerko/MultiplicationTable" class="button9">Таблица умножения >></a>   <a href="SergeyDerko/User_11" class="button9">Ввод данных Пользователя >></a>
+        <br />
+        <h5>********************************************************************************************************************************************************</h5>
+        <a href="SergeyDerko/InfoLog" class="button9">Данные из Логов Службы >></a>  <a href="SergeyDerko/InfoSiteLog" class="button9">Данные из Логов Сайта >></a>  <a href="SergeyDerko/ScanPcBd" class="button9">БД (тестовая версия) >></a>
+        <br/>
+        <h5>********************************************************************************************************************************************************</h5>
+        <br/><br /><br />
+        <h3>Простенький калькулятор</h3>
+        @using (Html.BeginForm("Index", "SergeyDerko"))
+        {
+            @Html.TextBoxFor(a => a.First)
+
+            <select name="math">
+                <option>действие</option>
+                <option>+</option>
+                <option>-</option>
+                <option>*</option>
+                <option>/</option>
+            </select>
+
+            @Html.TextBoxFor(b => b.Second)
+            <input id="Submit" type="submit" value="=" />
+            if (ViewBag.res != null)
+            {
+                <strong> @ViewBag.res</strong>
+            }
+        }
+        <h3>Результат действий  @ViewBag.First @ViewBag.Math @ViewBag.Second = @ViewBag.res</h3>
+    </div>
+</body>
+</html>

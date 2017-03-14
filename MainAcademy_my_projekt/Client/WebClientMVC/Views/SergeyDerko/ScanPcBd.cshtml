@@ -1,0 +1,92 @@
+﻿@model WebClientMVC.Models.ScanBdModel
+<h3 style="color:#0c2881">База данных - "ScanPc"</h3>
+<style>
+    .layer {
+        overflow: scroll;
+        width: 45%;
+        height: 600px;
+    }
+</style>
+<div class="layer">
+    <table border="1">
+        <tr>
+            <td><h4 align="center" style="color:#cf1324">Id</h4></td>
+            <td><h4 align="center" style="color:#cf1324">Hdd</h4></td>
+            <td><h4 align="center" style="color:#cf1324">Cpu</h4></td>
+            <td><h4 align="center" style="color:#cf1324">Memory</h4></td>
+            <td><h4 align="center" style="color:#cf1324">Video</h4></td>
+        </tr>
+        @foreach (var i in ViewBag.scan)
+        {
+            <tr>
+                <td><h4 style="color:#cf1324">@Html.Raw(i.ScanPcId)</h4></td>
+                <td>@Html.Raw(i.Hdd) </td>
+                <td>@Html.Raw(i.Cpu) </td>
+                <td>@Html.Raw(i.Memory) </td>
+                <td>@Html.Raw(i.Video) </td>
+            </tr>
+
+        }
+    </table>
+
+</div>
+<style>
+    .Submit {
+        position: absolute;
+        top: 11%;
+        right: 15%;
+        width: 35%;
+        height: 600px; 
+        border: solid 1px black;
+    }
+</style>
+<div class="Submit">
+    <h3 style="color:#0c2881">"Хотите что-то добавить в базу данных? Вперед!"</h3>
+    <div align="center">
+
+        @using (Html.BeginForm("ScanPcBd", "SergeyDerko"))
+        {
+            <h4>Введите параметры Hdd</h4>
+            @Html.TextBoxFor(w => w.AddHdd)
+            <h4>Введите параметры Cpu</h4>
+
+            @Html.TextBoxFor(e => e.AddCpu)
+            <h4>Введите параметры Memory</h4>
+
+            @Html.TextBoxFor(r => r.AddMemory)
+            <h4>Введите параметры Video</h4>
+
+            @Html.TextBoxFor(r => r.AddVideo)
+            <br />
+            <br />
+            <input id="Sub" type="submit" style="color:#cf1324" value="Отправить данные в базу!" />
+            <br />
+            
+            if (ViewBag.answer != null)
+            {
+                <h4 style="color:#cf1324">@ViewBag.answer</h4>
+            }
+            if (ViewBag.resp != null)
+            {
+                <h4 style="color:#cf1324">@ViewBag.resp</h4>
+            }
+        }
+        <h3 style="color:#0c2881"> Удаление данных из Базы</h3>
+        @using (Html.BeginForm("ScanPcBd", "SergeyDerko"))
+        {
+            <h4>Введите Id для удаления</h4>
+            @Html.TextBoxFor(w => w.I)
+            
+            <br />
+            <br />
+            <input id="Sub" type="submit" style="color:#cf1324" value="Удалить" />
+            <br />
+
+            if (ViewBag.IdRes != null)
+            {
+                <h4 style="color:#cf1324">@ViewBag.IdRes</h4>
+            }
+            
+        }
+    </div >
+</div>

@@ -1,0 +1,131 @@
+﻿
+@{
+    ViewBag.Title = "MultiplicationTable";
+}
+<link href="../../Content/SergeyDerko.css" rel="stylesheet">
+<h2>MultiplicationTable</h2>
+
+<br />
+@Html.ActionLink("Таблица умножения на - 2", "Table", "SergeyDerko")
+<br />
+@Html.ActionLink("Таблица умножения на - что угодно, параметр задается в строке :)", "TableOll", "SergeyDerko", new { a = 3 }, null)
+<br />
+<div id="box" align="left">
+    <table border="2">
+        @for (int j = 0, index = 0; j < 10; j++)
+        {
+            <tr>
+                <td>
+                    @{
+                        var str = ((List<string>)ViewBag.MTable)[index];
+                        @Html.Raw(str)
+                        index++;
+                    }
+                </td>
+            </tr>
+                        }
+    </table>
+
+    <table border="2">
+        @for (int j = 0, index = 10; j < 10; j++)
+        {
+            <tr>
+                <td>
+                    @{
+                        var str = ((List<string>)ViewBag.MTable)[index];
+                        @Html.Raw(str)
+                        index++;
+                    }
+                </td>
+            </tr>
+                        }
+    </table>
+    <table border="2">
+        @for (int j = 0, index = 20; j < 10; j++)
+        {
+            <tr>
+                <td>
+                    @{
+                        var str = ((List<string>)ViewBag.MTable)[index];
+                        @Html.Raw(str)
+                        index++;
+                    }
+                </td>
+            </tr>
+                        }
+    </table>
+
+    <table border="2">
+        @for (int j = 0, index = 30; j < 10; j++)
+        {
+            <tr>
+                <td>
+                    @{
+                        var str = ((List<string>)ViewBag.MTable)[index];
+                        @Html.Raw(str)
+                        index++;
+                    }
+                </td>
+            </tr>
+                        }
+    </table>
+
+    <table border="2">
+        @for (int j = 0, index = 40; j < 10; j++)
+        {
+            <tr>
+                <td>
+                    @{
+                        var str = ((List<string>)ViewBag.MTable)[index];
+                        @Html.Raw(str)
+                        index++;
+                    }
+                </td>
+            </tr>
+                        }
+    </table>
+
+    <table border="2">
+        @for (int j = 0, index = 50; j < 10; j++)
+        {
+            <tr>
+                <td>
+                    @{
+                        var str = ((List<string>)ViewBag.MTable)[index];
+                        @Html.Raw(str)
+                        index++;
+                    }
+                </td>
+            </tr>
+                        }
+    </table>
+    <table border="2">
+        @for (int j = 0, index = 60; j < 10; j++)
+        {
+            <tr>
+                <td>
+                    @{
+                        var str = ((List<string>)ViewBag.MTable)[index];
+                        @Html.Raw(str)
+                        index++;
+                    }
+                </td>
+            </tr>
+                        }
+    </table>
+
+    <table border="2">
+        @for (int j = 0, index = 70; j < 10; j++)
+        {
+            <tr>
+                <td>
+                    @{
+                        var str = ((List<string>)ViewBag.MTable)[index];
+                        @Html.Raw(str)
+                        index++;
+                    }
+                </td>
+            </tr>
+                        }
+    </table>
+</div>

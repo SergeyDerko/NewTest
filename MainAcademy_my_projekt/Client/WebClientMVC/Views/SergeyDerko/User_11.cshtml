@@ -1,0 +1,37 @@
+﻿@model WebClientMVC.Models.User11
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Строка ввода пользователя</title>
+</head>
+<body>
+    <div>
+
+        <br />
+
+        @using (Html.BeginForm("User_11", "SergeyDerko"))
+        {
+            <h3>Введите Ваше имя</h3>
+            @Html.TextBoxFor(w => w.Name)
+            <h3>Введите Вашу фамилию</h3>
+
+            @Html.TextBoxFor(e => e.Surname)
+            <h3>Введите Ваше очество</h3>
+
+            @Html.TextBoxFor(r => r.Patronymic)
+            <br />
+            <input id="Sub" type="submit" value="Отправить данные" />
+            <br />
+            <br />
+            if (ViewBag.name != null)
+            {
+                <h2>@ViewBag.User</h2>
+            }
+        }
+    </div>
+</body>
+</html>
+

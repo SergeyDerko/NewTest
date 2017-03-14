@@ -1,0 +1,105 @@
+﻿@model PagedList.IPagedList<TestWcfTypes.SergeyDerko.ScanPcBd>
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+@{
+    ViewBag.Title = "Работа с DB \"ScanPc\"";
+}
+
+<head>
+    <link href="../../Content/SergeyDerko.css" rel="stylesheet">
+</head>
+<h3 style="color:#0c2881">База данных - "ScanPc"</h3>
+
+<a class="button2" href="../ScanPcBds/Create">Добавить новую запись в Базу</a>
+<style>
+    .layer {
+        overflow: scroll;
+        width: 100%;
+        height: 500px;
+    }
+</style>
+@*<div class="layer">*@
+<table border="1">
+    <tr>
+        <td><h4 align="center" style="color:#cf1324">Id</h4></td>
+        <td><h4 align="center" style="color:#cf1324">Hdd</h4></td>
+        <td><h4 align="center" style="color:#cf1324">Cpu</h4></td>
+        <td><h4 align="center" style="color:#cf1324">Memory</h4></td>
+        <td><h4 align="center" style="color:#cf1324">Video</h4></td>
+        <td><h4 align="center" style="color:#cf1324">Actions</h4></td>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td><h4 style="color:#cf1324">@Html.Raw(item.ScanPcId)</h4></td>
+            <td>@Html.Raw(item.Hdd) </td>
+            <td>@Html.Raw(item.Cpu) </td>
+            <td>@Html.Raw(item.Memory) </td>
+            <td>@Html.Raw(item.Video) </td>
+            <td>
+                <strong> @Html.ActionLink("Edit", "Edit", new { id = item.ScanPcId })</strong>
+                <br />
+                <strong> @Html.ActionLink("Details", "Details", new { id = item.ScanPcId }) </strong>
+                <br />
+                <strong> @Html.ActionLink("Delete", "Delete", new { id = item.ScanPcId })</strong>
+            </td>
+        </tr>
+
+    }
+</table>
+
+@*</div>*@
+Страница @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) из @Model.PageCount
+
+@Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+<br />
+<style>
+    #idDiv {
+        position: relative;
+    }
+</style>
+<div id="idDiv">
+    <style>
+        #idWeit {
+            font-size: 20px;
+        }
+    </style>
+
+    <a class="button2" id="IdBut">Получить актуальные данные с сервера</a> <strong style="color:#cf1324" id="idWeit"></strong>
+
+    <table border="1" style="width: 100%;">
+        <tr>
+            <td id="idHddResult">Актуализируйте данные по HDD</td>
+            <td id="idCpuResult">Актуализируйте данные по CPU</td>
+            <td id="idVideoResult">Актуализируйте данные по VIDEO</td>
+            <td id="idMemoryResult">Актуализируйте данные по MEMORY</td>
+        </tr>
+    </table>
+    @section Footer{
+        <script>
+            $(document)
+                .ready(function () {
+
+                    var clb = function (result) {
+                        $("#idHddResult").html(result.Hdd);
+                        $("#idCpuResult").html(result.Cpu);
+                        $("#idVideoResult").html(result.Video);
+                        $("#idMemoryResult").html(result.Memory);
+                    }
+
+                    $("#IdBut")
+                        .click(function () {
+                            $("#idWeit").html("Подождите, идет запрос данных!");
+                            $.ajax({
+                                url: "@Url.Action("AjaxGetData", "ScanPcBds")",
+                                type: "POST",
+                                success: function (result) {
+                                    clb(result);
+                                    complete: $("#idWeit").html("Сделано!");
+                                }
+                            });
+                        });
+                });
+        </script>
+    }
+</div>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="dbe8393b-e83a-40f1-9cb8-acbc0d08d44c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:555/IReadLog" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ReadLog.wsdl" MetadataType="Wsdl" ID="e15051eb-b063-407d-8a43-0c15b39a3acb" SourceId="1" SourceUrl="http://localhost:555/IReadLog?wsdl" />
+    <MetadataFile FileName="IReadLog.xsd" MetadataType="Schema" ID="b3f71ee7-7fa6-4b0f-be25-afc4d25ef732" SourceId="1" SourceUrl="http://localhost:555/IReadLog?xsd=xsd1" />
+    <MetadataFile FileName="IReadLog.disco" MetadataType="Disco" ID="d5c98d60-ee16-476a-ad3c-1e55a1abbd73" SourceId="1" SourceUrl="http://localhost:555/IReadLog?disco" />
+    <MetadataFile FileName="IReadLog1.xsd" MetadataType="Schema" ID="d36c4b83-ae41-4e98-952a-d473cd805528" SourceId="1" SourceUrl="http://localhost:555/IReadLog?xsd=xsd2" />
+    <MetadataFile FileName="IReadLog2.xsd" MetadataType="Schema" ID="c6fa7780-5ea8-4505-9516-26e1cf617908" SourceId="1" SourceUrl="http://localhost:555/IReadLog?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3c2842d0-76d1-474e-bb63-cf27e9bc458d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:555/IScanPc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="IScanPc.xsd" MetadataType="Schema" ID="5cb595c8-5439-40f9-ac22-31f0d5331f91" SourceId="1" SourceUrl="http://localhost:555/IScanPc?xsd=xsd1" />
+    <MetadataFile FileName="ScanPc.wsdl" MetadataType="Wsdl" ID="3319cf0e-5ef5-47a7-b520-66d99492272b" SourceId="1" SourceUrl="http://localhost:555/IScanPc?wsdl" />
+    <MetadataFile FileName="IScanPc.disco" MetadataType="Disco" ID="2b3faa6b-3a1e-4617-80fa-f2adf2ee6bb3" SourceId="1" SourceUrl="http://localhost:555/IScanPc?disco" />
+    <MetadataFile FileName="IScanPc1.xsd" MetadataType="Schema" ID="19dcb2ea-40d0-4b0b-aff1-2d90972ca14f" SourceId="1" SourceUrl="http://localhost:555/IScanPc?xsd=xsd2" />
+    <MetadataFile FileName="IScanPc2.xsd" MetadataType="Schema" ID="02cc6089-a598-40dc-8420-7f6cd9e223fc" SourceId="1" SourceUrl="http://localhost:555/IScanPc?xsd=xsd3" />
+    <MetadataFile FileName="IScanPc3.xsd" MetadataType="Schema" ID="0d42bd5c-0ba4-4ec8-b680-3788c05fb8cb" SourceId="1" SourceUrl="http://localhost:555/IScanPc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

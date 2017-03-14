@@ -1,0 +1,48 @@
+﻿@model TestWcfTypes.SergeyDerko.ScanPcBd
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2 align="center" style="color:#cf1324">Инфо - записи в Базе</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Hdd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Hdd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cpu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cpu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Memory)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Memory)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Video)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Video)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    <h4 align="left">@Html.ActionLink("<< Вернуться к базе", "Index") ||   @Html.ActionLink("Редактировать >>", "Edit", new { id = Model.ScanPcId })</h4>
+</p>

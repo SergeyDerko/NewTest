@@ -1,0 +1,64 @@
+﻿@model TestWcfTypes.SergeyDerko.ScanPcBd
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h1 style="color:#cf1324" align="center">Удаление</h1>
+
+<h3>Вы точно хотите удалить эту запись из Базы?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ScanPcId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ScanPcId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Hdd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Hdd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cpu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cpu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Memory)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Memory)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Video)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Video)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Удалить" class="btn btn-default" style="color:#cf1324" /> 
+            <br/>
+            <br/>
+            @Html.ActionLink("<--Вернуться к базе", "Index")
+        </div>
+    }
+</div>
