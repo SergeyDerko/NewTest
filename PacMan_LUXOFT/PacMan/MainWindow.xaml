@@ -1,0 +1,147 @@
+﻿<Window x:Class="PacMan.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="PacMan" Height="350" Width="525">
+    <Grid   Background="Aquamarine" >
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="14*"></RowDefinition>
+            <RowDefinition Height="15*"></RowDefinition>
+            <RowDefinition Height="14*"></RowDefinition>
+            <RowDefinition Height="15*"></RowDefinition>
+            <RowDefinition Height="14*"></RowDefinition>
+            <RowDefinition Height="15*"></RowDefinition>
+            <RowDefinition Height="14*"></RowDefinition>
+            <RowDefinition Height="15*"></RowDefinition>
+            <RowDefinition Height="14*"></RowDefinition>
+            <RowDefinition Height="15*"></RowDefinition>
+
+            <RowDefinition Height="14*"></RowDefinition>
+            <RowDefinition Height="14*"></RowDefinition>
+            <RowDefinition Height="14*"></RowDefinition>
+            <RowDefinition Height="14*"></RowDefinition>
+            <RowDefinition Height="14*"></RowDefinition>
+            <RowDefinition Height="14*"></RowDefinition>
+            <RowDefinition Height="14*"></RowDefinition>
+            <RowDefinition Height="14*"></RowDefinition>
+            <RowDefinition Height="14*"></RowDefinition>
+            <RowDefinition Height="15*"></RowDefinition>
+
+        </Grid.RowDefinitions>
+
+        <Image x:Name="Pacman" Grid.Column="0" Grid.Row="1"   Source="Resources/Pacman.png"/>
+        <Image x:Name="Woll" Grid.Column="2" Grid.Row="2"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll1" Grid.Column="2" Grid.Row="3"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll2" Grid.Column="2" Grid.Row="4"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll3" Grid.Column="2" Grid.Row="5"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll4" Grid.Column="2" Grid.Row="6"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll5" Grid.Column="2" Grid.Row="7"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll6" Grid.Column="2" Grid.Row="8"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll7" Grid.Column="3" Grid.Row="8"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll8" Grid.Column="4" Grid.Row="8"   Source="Resources/wall.jpg" />
+
+        <Image x:Name="Woll9" Grid.Column="9" Grid.Row="8"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll10" Grid.Column="8" Grid.Row="7"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll11" Grid.Column="8" Grid.Row="6"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll12" Grid.Column="8" Grid.Row="5"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll13" Grid.Column="8" Grid.Row="4"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll14" Grid.Column="8" Grid.Row="3"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll15" Grid.Column="8" Grid.Row="2"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll16" Grid.Column="10" Grid.Row="2"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll17" Grid.Column="10" Grid.Row="3"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll18" Grid.Column="10" Grid.Row="4"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll19" Grid.Column="10" Grid.Row="5"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll20" Grid.Column="10" Grid.Row="6"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll21" Grid.Column="10" Grid.Row="7"   Source="Resources/wall.jpg" />
+
+        <Image x:Name="Wol22" Grid.Column="15" Grid.Row="5"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll24" Grid.Column="16" Grid.Row="3"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll25" Grid.Column="17" Grid.Row="2"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll26" Grid.Column="15" Grid.Row="6"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll27" Grid.Column="16" Grid.Row="7"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll28" Grid.Column="17" Grid.Row="8"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll29" Grid.Column="14" Grid.Row="3"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll30" Grid.Column="15" Grid.Row="4"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll32" Grid.Column="14" Grid.Row="7"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll33" Grid.Column="13" Grid.Row="8"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll34" Grid.Column="13" Grid.Row="2"   Source="Resources/wall.jpg" />
+
+
+        <Image x:Name="Woll48" Grid.Column="3" Grid.Row="12"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll49" Grid.Column="2" Grid.Row="13"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll50" Grid.Column="2" Grid.Row="14"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll51" Grid.Column="2" Grid.Row="15"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll52" Grid.Column="2" Grid.Row="16"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll53" Grid.Column="2" Grid.Row="17"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll54" Grid.Column="3" Grid.Row="18"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll55" Grid.Column="4" Grid.Row="17"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll56" Grid.Column="4" Grid.Row="16"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll57" Grid.Column="4" Grid.Row="15"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll58" Grid.Column="4" Grid.Row="14"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll59" Grid.Column="4" Grid.Row="13"   Source="Resources/wall.jpg" />
+
+
+        <Image x:Name="Woll60" Grid.Column="8" Grid.Row="12"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll61" Grid.Column="8" Grid.Row="13"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll62" Grid.Column="8" Grid.Row="14"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll63" Grid.Column="8" Grid.Row="15"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll64" Grid.Column="8" Grid.Row="16"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll65" Grid.Column="8" Grid.Row="17"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll66" Grid.Column="8" Grid.Row="18"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll67" Grid.Column="9" Grid.Row="15"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll68" Grid.Column="9" Grid.Row="12"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll69" Grid.Column="10" Grid.Row="12"   Source="Resources/wall.jpg" />
+
+
+        <Image x:Name="Woll70" Grid.Column="15" Grid.Row="12"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll71" Grid.Column="14" Grid.Row="12"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll72" Grid.Column="16" Grid.Row="12"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll73" Grid.Column="15" Grid.Row="13"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll74" Grid.Column="15" Grid.Row="14"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll75" Grid.Column="15" Grid.Row="15"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll76" Grid.Column="15" Grid.Row="16"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll77" Grid.Column="15" Grid.Row="17"   Source="Resources/wall.jpg" />
+        <Image x:Name="Woll78" Grid.Column="15" Grid.Row="18"   Source="Resources/wall.jpg" />
+
+
+        <Image x:Name="Apple" Grid.Column="5" Grid.Row="6"   Source="Resources/Apple.png"/>
+        <Image x:Name="Winer" Grid.Column="3" Grid.Row="13"   Source="Resources/корзинка.png"/>
+        <Image x:Name="HunteR" Grid.Column="6" Grid.Row="11"   Source="Resources/приведение.png"/>
+        <Image x:Name="HunteR1" Grid.Column="7" Grid.Row="11"   Source="Resources/приведение_желтое.png"/>
+        <Image x:Name="HunteR2" Grid.Column="8" Grid.Row="11"   Source="Resources/приведение_красное.png"/>
+        <Image x:Name="HunteR3" Grid.Column="9" Grid.Row="11"   Source="Resources/приведение_оранжевое.png"/>
+        <Image x:Name="HunteR4" Grid.Column="10" Grid.Row="11"   Source="Resources/приведение_фиолетовое.png"/>
+        <TextBox x:Name="Box" Grid.Row="0" Grid.ColumnSpan="3" Grid.Column="8" Text=""  TextAlignment="Center" TextDecorations="Baseline" />
+
+
+
+    </Grid>
+</Window>

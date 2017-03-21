@@ -164,3 +164,5 @@ C:\Users\Sergey\Desktop\Yazva_final_beta2.1\Wpf_ChangeImage\obj\x86\Debug\MainWi
 C:\Users\Sergey\Desktop\Yazva_final_beta2.1\Wpf_ChangeImage\obj\x86\Debug\Wpf_ChangeImage.g.resources
 C:\Users\Sergey\Desktop\Yazva_final_beta2.1\Wpf_ChangeImage\obj\x86\Debug\Wpf_ChangeImage.Properties.Resources.resources
 C:\Users\Sergey\Desktop\Yazva_final_beta2.1\Wpf_ChangeImage\obj\x86\Debug\Wpf_ChangeImage.csproj.GenerateResource.Cache
+D:\Git\NewTest\WPF_project\Wpf_ChangeImage\obj\x86\Debug\Wpf_ChangeImage.exe
+D:\Git\NewTest\WPF_project\Wpf_ChangeImage\obj\x86\Debug\Wpf_ChangeImage.pdb
